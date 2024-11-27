@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Dtos\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Persistences\Contexto\" />
+    <Folder Include="Persistences\Interfaces\" />
+    <Folder Include="Persistences\Repositorios\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.4.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PuntoDeVenta.Domain\PuntoDeVenta.Domain.csproj" />
+    <ProjectReference Include="..\PuntoDeVenta.Utilities\PuntoDeVenta.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
